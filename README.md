@@ -1,1 +1,1 @@
-# OTD_GAN
+#  Remote Sensing Image Generation via Object Text Decoupling
