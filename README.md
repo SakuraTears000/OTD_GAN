@@ -23,12 +23,12 @@ Install [CLIP](https://github.com/openai/CLIP)
 
   You can download the preprocessed datasets from [Baidu Netdisk](https://pan.baidu.com/s/1xQFNwlIa_cIKEQIyoIiHZQ?pwd=bc6e), then extract them to `dataset/`.
 
-## Training
+## Training (Taking RSICD dataset as example)
 ### 1.Train the OTD module
   - Clone and install [CoCoOp](https://github.com/KaiyangZhou/CoOp), then move '/code/train_otd' to the folder.
   - Train the OTD module using
   ```
-  
+  bash scripts/otd/train_otd_main.sh rsicd otd_config
   ```
-  
+ 
 
