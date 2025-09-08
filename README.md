@@ -43,3 +43,21 @@ Install [CLIP](https://github.com/openai/CLIP)
   ```
   bash scripts/test.sh ./cfg/rsicd.yml
   ```
+---
+### Cite
+
+If you find OTD-GAN useful in your research, please consider citing it:
+```
+
+@article{zhao2025remote,
+  title={Remote Sensing Image Generation via Object Text Decoupling},
+  author={Zhao, Wenda and Zhang, Zhepu and Zhao, Fan and Wang, Haipeng and He, You and Lu, Huchuan},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2025},
+  publisher={IEEE}
+}
+
+```
+
+**Reference**
+- [GALIP: Generative Adversarial CLIPs for Text-to-Image Synthesis] [[code]](https://github.com/tobran/GALIP)
