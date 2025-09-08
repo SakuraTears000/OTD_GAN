@@ -1,0 +1,42 @@
+CONFIG_NAME: 'rsicd'
+dataset_name: 'rsicd'
+data_dir: 'PATH_TO_DATASET'
+pl_path: 'MODULE_SAVE_PATH/prompt_learner/model.pth.tar-20'
+
+imsize: 224
+z_dim: 100
+cond_dim: 512
+manual_seed: 100
+cuda: True
+
+clip4evl: {'src':"clip", 'type':'ViT-B/32'}
+clip4trn: {'src':"clip", 'type':'ViT-B/32'}
+clip4text: {'src':"clip", 'type':'ViT-B/32'}
+
+stamp: 'normal'
+state_epoch: 0
+max_epoch: 1001
+batch_size: 32
+gpu_id: 0
+nf: 64
+ch_size: 3
+
+n_cls: 6
+
+n_ctx: 6  # <<----------------------------------------------------------------------------------------------------------
+
+cname2lab: {'baseball_field': 0,'boat':1,'bridge':2,'car':3,'playground':4,'storage_tank':5}
+
+scaler_min: 64
+growth_interval: 2000
+lr_g: 0.0001
+lr_d: 0.0004
+sim_w: 4.0
+
+sample_times: 10
+
+gen_interval: 10 #1
+test_interval: 20 #5
+save_interval: 20
+
+log_dir: 'new'

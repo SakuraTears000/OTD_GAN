@@ -1,0 +1,43 @@
+CONFIG_NAME: 'nwpu'
+dataset_name: 'nwpu'
+data_dir: 'PATH_TO_DATASET'
+pl_path: 'MODULE_SAVE_PATH/prompt_learner/model.pth.tar-20'
+
+imsize: 256
+z_dim: 100
+cond_dim: 512
+manual_seed: 100
+cuda: True
+
+clip4evl: {'src':"clip", 'type':'ViT-B/32'}
+clip4trn: {'src':"clip", 'type':'ViT-B/32'}
+clip4text: {'src':"clip", 'type':'ViT-B/32'}
+
+stamp: 'normal'
+state_epoch: 0
+max_epoch: 1001
+batch_size: 32
+gpu_id: 0
+nf: 64
+ch_size: 3
+
+n_cls: 11
+
+n_ctx: 6  # <<----------------------------------------------------------------------------------------------------------
+
+cname2lab: {'plane': 0, 'baseball_diamond': 1, 'basketball_court':2, 'bridge':3, 'ground_track_field':4, 'harbor':5,
+'ship': 6, 'stadium':7, 'storage_tank':8, 'tennis_court':9, 'thermal_power_station':10}
+
+scaler_min: 64
+growth_interval: 2000
+lr_g: 0.0001
+lr_d: 0.0004
+sim_w: 4.0
+
+sample_times: 10
+
+gen_interval: 20 #1
+test_interval: 40 #5
+save_interval: 200
+
+log_dir: 'new'
