@@ -39,7 +39,7 @@ Install [CLIP](https://github.com/openai/CLIP)
   ```
 ### 3. Inference(Sampling)
   - You can sampling images with trained modle using
-  - Replace 'PATH_TO_DATASET' & 'SAVE_DIR' with your own settings in 'scripts/test.sh'.
+  - Replace 'PATH_TO_TRAINED_MODEL' & 'SAVE_DIR' with your own settings in 'scripts/test.sh'.
   ```
   bash scripts/test.sh ./cfg/rsicd.yml
   ```
