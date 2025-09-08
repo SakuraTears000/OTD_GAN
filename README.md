@@ -28,7 +28,18 @@ Install [CLIP](https://github.com/openai/CLIP)
   - Clone and install [CoCoOp](https://github.com/KaiyangZhou/CoOp), then move '/code/train_otd' to the folder.
   - Train the OTD module using
   ```
-  bash scripts/otd/train_otd_main.sh rsicd otd_config
+  bash scripts/otd/train_otd_main.sh PATH_TO_DATASET rsicd otd_config MODULE_SAVE_PATH
   ```
- 
-
+  where 'PATH_TO_DATSET' should be replaced with the path to the dataset. 'MODULE_SAVE_PATH' is used to specify the file directory to save the trained OTD_module.
+### 2. Train the OTD_GAN
+  - Replace 'PATH_TO_DATASET' & 'MODULE_SAVE_PATH' with your own settings in './cfg/rsicd.yml'.
+  - Train the OTD-GAN using
+  ```
+  bash scripts/train.sh ./cfg/rsicd.yml
+  ```
+### 3. Inference(Sampling)
+  - You can sampling images with trained modle using
+  - Replace 'PATH_TO_DATASET' & 'SAVE_DIR' with your own settings in 'scripts/test.sh'.
+  ```
+  bash scripts/test.sh ./cfg/rsicd.yml
+  ```
